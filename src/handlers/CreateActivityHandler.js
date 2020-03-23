@@ -2,7 +2,7 @@ import ActivityHandler from './ActivityHandler';
 import activityTemplate from './activity.ttl';
 import { replaceVariables } from '../util';
 import { namedNode, literal } from '@rdfjs/data-model';
-import uuid from 'uuid/v4';
+import { v4 as uuid } from 'uuid';
 import context from '@solid/context';
 
 const { xsd } = context['@context'];
